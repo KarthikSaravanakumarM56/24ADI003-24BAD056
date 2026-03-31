@@ -1,1 +1,121 @@
+SCENARIO 1 – USER-BASED COLLABORATIVE FILTERING
 
+
+Problem Statement
+
+Recommend movies to users based on similar users' preferences.
+
+
+Dataset (Kaggle – Public)
+
+MovieLens Dataset Dataset Link: https://www.kaggle.com/datasets/grouplens/movielens-100k
+
+(You can pick any dataset if required)
+
+
+Target Variable: Recommended movies for a given user
+
+Input Feature:
+
+• User ID
+
+• Movie ID
+
+• Ratings
+
+• Timestamp
+
+
+IN-LAB TASKS (KNN Classification)
+
+1. Import required Python libraries
+
+2. Load the MovieLens dataset
+
+3. Perform data inspection & preprocessing
+
+4. Create User-Item matrix
+
+5. Handle missing values (fill with 0 or mean)
+
+6. Compute similarity between users (Cosine similarity)
+
+7. Identify top-N similar users
+
+8. Predict ratings for unseen movies
+
+9. Generate Top-N recommendations for a user
+
+10. Evaluate using:
+
+· RMSE (Root Mean Square Error)
+
+· MAE (Mean Absolute Error)
+
+
+Analysis Tasks
+
+• Observe how similarity affects recommendations
+
+• Analyze sparsity of the matrix
+
+• Identify recommendation quality for different users
+
+
+Visualization
+
+• Heatmap of User-Item Matrix • Similarity Matrix • Top recommended movies
+
+SCENARIO 2 – ITEM-BASED COLLABORATIVE FILTERING
+
+
+Problem Statement
+
+Recommend similar items (movies/products) based on user ratings.
+
+
+Dataset (Same / Alternative Dataset)
+
+MovieLens Dataset / Amazon Product Dataset
+
+
+Target Variable: Recommended items similar to a given item
+
+Input Features
+
+• Item ID
+
+• User ratings
+
+• User interactions
+
+
+IN-LAB TASKS (Decision Tree Classification)
+
+1. Load dataset
+
+2. Create Item-User matrix
+
+3. Compute item similarity (Cosine similarity / Pearson correlation)
+
+4. Identify top similar items
+
+5. Recommend items based on user history
+
+6. Compare item-based vs user-based recommendations
+
+7. Evaluate model using:
+
+· RMSE
+
+· Precision@K
+
+
+Analysis Tasks
+
+• Compare recommendation accuracy with Scenario 1 • Identify popular vs niche items • Study scalability of item-based approach
+
+
+Visualization
+
+• Item similarity heatmap • Top similar items graph • Recommendation comparison chart
