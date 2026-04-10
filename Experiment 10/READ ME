@@ -1,1 +1,143 @@
+SCENARIO 1 – MATRIX FACTORIZATION USING SVD
 
+
+Problem Statement
+
+Use Singular Value Decomposition (SVD) to recommend movies based on latent user-item interactions.
+
+
+Dataset (Kaggle – Public)
+
+MovieLens Dataset Dataset Link: https://www.kaggle.com/datasets/abhikjha/movielens-100k
+
+
+
+Target Variable: Predicted ratings for unseen movies
+
+Input Feature:
+
+• User ID
+
+• Movie ID
+
+• Ratings
+
+
+IN-LAB TASKS
+
+1. Import required Python libraries (NumPy, Pandas, Scikit-learn, Surprise, etc.)
+
+2. Load the MovieLens dataset
+
+3. Perform data preprocessing
+
+4. Create User-Item Interaction Matrix
+
+5. Normalize the matrix (optional – mean centering)
+
+6. Apply SVD decomposition
+
+7. Reduce dimensions (select k latent factors)
+
+8. Reconstruct the matrix
+
+9. Predict missing ratings
+
+10. Generate Top-N recommendations
+
+
+Evaluation Metrics
+
+• RMSE (Root Mean Square Error)
+
+• MAE (Mean Absolute Error)
+
+
+Analysis Tasks
+
+• Analyze effect of number of latent factors (k)
+
+• Compare predicted vs actual ratings
+
+• Observe how dimensionality reduction improves performance
+
+• Study overfitting vs underfitting
+
+
+
+
+Visualization
+
+• Heatmap of original vs reconstructed matrix • Error vs number of latent factors • Top recommended movies
+
+
+SCENARIO 2 – MATRIX FACTORIZATION USING NMF
+
+
+Problem Statement
+
+Use Non-negative Matrix Factorization (NMF) to generate recommendations based on latent features.
+
+
+Dataset (Same / Alternative Dataset)
+
+Same MovieLens Dataset (or any rating dataset)
+
+
+Target Variable: Predicted ratings / Recommendations
+
+Input Features
+
+• User ID
+
+• Movie ID
+
+• Ratings
+
+
+IN-LAB TASKS
+
+1. Load dataset
+
+2. Create User-Item matrix
+
+3. Handle missing values (fill with 0 or mean)
+
+4. Apply NMF model
+
+5. Factorize into:
+
+a. User-feature matrix
+
+b. Item-feature matrix
+
+6. Reconstruct the rating matrix
+
+7. Predict missing values
+
+8. Generate Top-N recommendations
+
+
+Evaluation Metrics
+
+• RMSE
+
+• Precision@K
+
+• Recall@K
+
+
+Analysis Tasks
+
+• Compare SVD vs NMF performance
+
+• Observe interpretability of NMF factors
+
+• Analyze sparsity handling
+
+• Compare recommendation diversity
+
+
+Visualization
+
+• Latent feature visualization • Reconstruction comparison • Recommendation ranking chart
