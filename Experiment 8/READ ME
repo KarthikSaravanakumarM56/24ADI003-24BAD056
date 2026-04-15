@@ -1,1 +1,123 @@
+SCENARIO 1 – ASSOCIATION RULE MINING USING APRIORI ALGORITHM
 
+
+Problem Statement
+
+Identify frequent itemsets and generate association rules from transactional data using the Apriori algorithm.
+
+
+Dataset (Kaggle – Public)
+
+Market Basket Dataset / Grocery Dataset Example: https://www.kaggle.com/datasets/heeraldedhia/groceries-dataset
+
+
+
+Target Variable: Association rules (frequent item relationships)
+
+Input Feature:
+
+• Transaction ID
+
+• Items purchased
+
+
+IN-LAB TASKS
+
+1. Import required Python libraries (Pandas, mlxtend, etc.)
+
+2. Load transactional dataset
+
+3. Perform data preprocessing (convert to one-hot encoding format)
+
+4. Generate frequent itemsets using Apriori algorithm
+
+5. Set minimum support threshold
+
+6. Generate association rules
+
+7. Filter rules using confidence and lift
+
+8. Interpret rules
+
+
+Evaluation Metrics
+
+• Support • Confidence • Lift
+
+
+Analysis Tasks
+
+• Observe effect of support threshold on itemsets
+
+• Identify strong association rules
+
+• Compare rules with different confidence levels
+
+• Analyze real-world meaning of rules
+
+
+
+
+
+
+Visualization
+
+• Bar chart of frequent itemsets • Network graph of association rules • Support vs confidence plots
+
+
+SCENARIO 2 – DIMENSIONALITY REDUCTION USING PCA
+
+
+Problem Statement
+
+Reduce high-dimensional data into lower dimensions while preserving maximum variance using PCA.
+
+
+Dataset (Same / Alternative Dataset)
+
+Any dataset with multiple numerical features
+
+Example: Iris Dataset / Wine Dataset
+
+
+Target Variable: Principal components (reduced feature set)
+
+Input Features
+
+• Numerical features (e.g., measurements, attributes)
+
+
+IN-LAB TASKS
+
+1. Load dataset
+
+2. Perform data preprocessing (handling missing values, scaling)
+
+3. Standardize features
+
+4. Apply Principal Component Analysis (PCA)
+
+5. Compute principal components
+
+6. Determine explained variance ratio
+
+7. Reduce dimensions (e.g., 2D or 3D)
+
+8. Visualize transformed data
+
+
+Evaluation Metrics
+
+• Explained Variance Ratio
+
+• Cumulative Variance
+
+
+Analysis Tasks
+
+• Analyze variance captured by each component • Decide optimal number of components • Compare original vs reduced data • Observe effect on visualization
+
+
+Visualization
+
+• Scree plot (variance vs components) • 2D/3D scatter plot of principal components • Cumulative variance graph
